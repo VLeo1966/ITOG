@@ -1,0 +1,7 @@
+<!-- orders/create_order.html -->
+<h2>Оформить Заказ</h2>
+<form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Заказать</button>
+</form>
